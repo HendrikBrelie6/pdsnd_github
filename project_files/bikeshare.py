@@ -12,7 +12,9 @@ CITY_DATA = { 'chi': 'chicago.csv',
               'ny': 'new_york_city.csv',
               'was': 'washington.csv' }
 
-MONTH_DATA = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'all']
+# MONTH_DATA = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'all']
+MONTH_DATA = [month[:3] for month in pd.date_range(start='2022-01-01', end='2022-06-01', freq='MS').strftime("%B").tolist()]
+
 
 DAY_DATA = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
@@ -72,7 +74,7 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day'] = df['Start Time'].dt.strftime('%A')
-    # df['day'] = pd.to_datetime(df['day'], format='%A').dt.strftime('%a')
+    # Old code df['day'] = df['Start Time'].dt.weekday_name
     df['hour'] = df['Start Time'].dt.hour
 
     # filter by month if applicable
