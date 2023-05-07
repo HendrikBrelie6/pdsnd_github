@@ -11,7 +11,6 @@ The US Bikeshare Python project is about analyzing bike share data from three ma
 
 The file is set up with an interactive user interface for the user to select if they want to see data from a specific cities or all cities. 
 
-User can then 
 User can then see statistics like number of users, number of trips, average trip duration etc. 
 
 ### Files used
