@@ -14,7 +14,6 @@ The file is set up with an interactive user interface for the user to select if 
 User can then see statistics like number of users, number of trips, average trip duration etc. 
 
 ### Files used
-City data as csv (New York City, Chicago, Washington), python files (bikeshare, dataframe, weekday) and readme file
 City data in CSV format (New York City, Chicago, Washington)
 Python files (bikeshare.py, dataframe.py, weekday.py)
 README file
