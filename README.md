@@ -11,7 +11,6 @@ The US Bikeshare Python project is about analyzing bike share data from three ma
 
 The file is set up with an interactive user interface for the user to select if they want to see data from a specific cities or all cities. 
 
-User can then 
 
 ### Files used
 City data as csv (New York City, Chicago, Washington), python files (bikeshare, dataframe, weekday) and readme file
